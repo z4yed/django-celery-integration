@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+   <div class="container">
+
+        <div class="jumbotron">
+            <h2 class="text-center">Review</h2>
+
+            <form action="" method="post">{% csrf_token %}
+                <div class="row">
+                    <div class="col-8">
+                        <label for="subject" class="form-control-label">Subject</label>
+                        <input type="text" class="form-control" name="subject">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <label for="subject" class="form-control-label">Your Email</label>
+                        <input type="text" class="form-control" name="email">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <label for="subject" class="form-control-label">Subject</label>
+                        <textarea type="text" rows="10" class="form-control" name="review"> </textarea>
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <button type="submit" class="btn btn-primary"> Submit </button>
+                </div>
+
+            </form>
+
+        </div>
+
+   </div>
+
+{% endblock content %}

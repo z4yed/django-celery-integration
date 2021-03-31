@@ -1,0 +1,8 @@
+
+    Hello, Thanks for your Response.
+
+    Here is the copy of your response:
+
+    {{ review | safe }}
+
+    Thank You.
